@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.backdrop {
+  background-image: url("https://images.goway.com/production/hero_image/iStock-833264986.jpg");
+  /* background-image: url('Background.jpg'); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  align-items: center;
+}
+
+/* hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo i {
+  color: rgb(13, 96, 189);
+  transform: rotate(45deg);
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.links a:active {
+  color: #0d60bd;
+}
+
+.active {
+  color: #0d60bd !important;
+}
+
+.active:hover {
+  color: white !important;
+}
+
+.links button {
+  color: white;
+  background-color: rgb(13, 96, 189);
+  padding: 10px 20px;
+  border: 1px solid rgb(13, 96, 189);
+  border-radius: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 70px;
+  padding-bottom: 75px;
+}
+
+.highlight {
+  color: #1380fc;
+  font-family: "Playwrite IE", cursive;
+}
+
+.main p {
+  margin: 25px 0;
+  max-width: 300px;
+  font-weight: 400;
+  color: black;
+}
+
+.main-btns {
+  display: flex;
+  gap: 20px;
+}
+
+#btn-1 {
+  color: white;
+  background-color: rgb(13, 96, 189);
+  padding: 10px 20px;
+  border: 1px solid rgb(13, 96, 189);
+  border-radius: 20px;
+}
+
+#btn-2 {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  color: rgb(13, 96, 189) !important;
+  background-color: white !important;
+}
+
+/* Bottom CSS */
+.bottom {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 70px; */
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 73%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: -55px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 15px;
+}
+
+.search i {
+  color: #0d60bd;
+}
+
+.search button {
+  color: white;
+  background-color: rgb(13, 96, 189);
+  padding: 10px 20px;
+  border: 1px solid rgb(13, 96, 189);
+  border-radius: 15px;
+  width: 100px;
+  height: 45px;
+  /* margin-right: 10px; */
+}
+
+.input-group {
+  /* background-color: yellow; */
+  padding-left: 1%;
+  display: flex;
+  justify-content: center !important;
+  gap: 5px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 120px;
+  /* background-color: tomato; */
+}
+
+.text label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.text input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading h1 {
+  font-size: 28px;
+  font-weight: 750;
+}
+
+.heading hr {
+  /* text-decoration: underline wavy 2px #0d60bd; */
+  width: 200px;
+  border: 2px solid #0d60bd;
+  margin: 10px auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 220px;
+}
+
+.card img {
+  height: 250px;
+  border-radius: 10px;
+}
+
+.sticky {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: -43px;
+  padding: 2px 5px;
+  width: fit-content;
+  margin-left: 5px;
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.card h4,
+.card p {
+  margin-left: 15px;
+}
+
+.card h4 {
+  margin-top: 7px;
+  margin-bottom: -10px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f2f6fa;
+  /* margin: 0 100px; */
+  border-radius: 15px;
+  margin-top: 10px;
+  width: 84%;
+}
+
+.features hr {
+  margin: 25px 0;
+}
+
+.trait {
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.trait i {
+  color: #0d60bd;
+}
+
+.trait p {
+  font-size: 13px;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+#contact {
+  width: 84%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-image: url("https://frontier-canada.co.uk/wp-content/uploads/2023/05/alberta-kananaskis-view-holiday1200x450-800x300.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.contact button {
+  color: white;
+  background-color: rgb(13, 96, 189);
+  padding: 10px 20px;
+  border: 1px solid rgb(13, 96, 189);
+  border-radius: 20px;
+}
+
+@media all and (max-width: 992px) {
+  .card {
+    width: 200px;
+  }
+  .card img {
+    height: 228px;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  .links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: black;
+    flex-direction: column;
+    width: 150px;
+    padding: 20px;
+    gap: 20px;
+    display: none; /* hidden by default */
+  }
+
+  .links a {
+    color: white;
+  }
+
+  .links a:hover {
+    color: #1380fc;
+  }
+
+  .links.active {
+    display: flex;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .search {
+    flex-wrap: wrap;
+    margin-top: -70px;
+  }
+
+  .main p {
+    color: #f2f6fa;
+  }
+
+  .card {
+    width: 150px;
+  }
+  .card img {
+    height: 171px;
+  }
+
+  .trait h5 {
+    font-size: 12px;
+  }
+  .trait p {
+    font-size: 11px;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .backdrop {
+    background-image: url("https://images.stockcake.com/public/5/8/4/5846fe14-adac-45d8-b042-5f8da5f99a01_large/santorini-coastal-view-stockcake.jpg");
+  }
+
+  .search {
+    justify-content: space-around;
+  }
+
+  .search button {
+    width: 80px;
+    height: 36px;
+  }
+
+  .main p {
+    color: rgb(0, 0, 0);
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    width: 84%;
+    justify-content: center;
+  }
+
+  .features {
+    flex-wrap: wrap;
+  }
+
+  .features hr {
+    display: none;
+  }
+}
